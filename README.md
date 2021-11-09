@@ -15,7 +15,8 @@ This is my first ever bot! And I'd like to make it free so anyone can use, contr
   * Description: returns the bot's latency in miliseconds rounded.
 
 ##  RoadMap
-* Created the dice command along with the ping command ~ 6/11/2021 (DD/MM/YYYY).
+* Created the `rand` command along with the `ping` command ~ 6/11/2021 (DD/MM/YYYY).
+* Created the `ip` command ~ 10/11/2021 (DD/MM/YYYY)
 
 ##  Resources
  * Random numbers are based on the [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/) API.

@@ -40,16 +40,5 @@ class randCog(commands.Cog):
             embed.add_field(name="ORG", value=f'{org}')
 
             await ctx.send(embed=embed)
-
-
-
-                
-
-
-
-
-
-
-
 def setup(bot):
     bot.add_cog(randCog(bot))

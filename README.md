@@ -1,4 +1,4 @@
-# <b>TuxBotr</b>
+# <b>TuxBot</b>
 ## Introduction
 This is my first ever bot! And I'd like to make it free so anyone can use, contribute, and learn from it, this bot is a major learning experience for me, and I hope it can help others out!
 

@@ -23,3 +23,5 @@ This is my first ever bot! And I'd like to make it free so anyone can use, contr
 ##  Resources
  * Random numbers are based on the [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/) API.
  * IP lookups provided by [IPAPI](https://ipapi.co/).
+
+![TuxBot Banner](assets/Banner.png)

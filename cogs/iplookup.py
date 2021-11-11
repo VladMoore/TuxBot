@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import requests
 
-class randCog(commands.Cog):
+class ipCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
@@ -33,7 +33,7 @@ class randCog(commands.Cog):
 
             embed=discord.Embed(title=f"IP Lookup for: {args[0]}",color=discord.Color.blue())
             embed.add_field(name='Country', value=f'{countryname} ({countrycode})')
-            embed.add_field(name="Region", value=f'region ({regioncode})')
+            embed.add_field(name="Region", value=f'{region} ({regioncode})')
             embed.add_field(name="City", value=f"{city}")
             embed.add_field(name="Timezone", value=f"{timezone}")
             embed.add_field(name="UTC Offset", value=f"{utc}")
@@ -41,4 +41,4 @@ class randCog(commands.Cog):
 
             await ctx.send(embed=embed)
 def setup(bot):
-    bot.add_cog(randCog(bot))
+    bot.add_cog(ipCog(bot))

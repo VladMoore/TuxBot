@@ -1,6 +1,10 @@
 import discord
 from discord.ext import commands
 import requests
+import asyncio
+from discord import Embed
+from discord import Color as c
+import re
 
 class randCog(commands.Cog):
     def __init__(self, bot):
@@ -33,7 +37,12 @@ class randCog(commands.Cog):
 
                 if success == True:
                     data = json_data['data']
-                    await ctx.send(f'{data}')
+                    a = Embed(title='Generating...',color=c.orange())
+                    b = Embed(title='Generated!',description=f'{data}',color=c.green())
+                    b.set_footer(text='These numbers were processed using Quantum Computing.')
+                    msg = await ctx.send(embed=a)
+                    await asyncio.sleep(1)
+                    await msg.edit(embed=b)
 
 
         else:
@@ -45,7 +54,12 @@ class randCog(commands.Cog):
 
             if success == True:
                 data = json_data['data']
-                await ctx.send(f'{data}')
+                a = Embed(title='Generating...',color=c.orange())
+                b = Embed(title='Generated!',description=f'{data}',color=c.green())
+                b.set_footer(text='These numbers were processed using Quantum Computing.')
+                msg = await ctx.send(embed=a)
+                await asyncio.sleep(1)
+                await msg.edit(embed=b)
 
 def setup(bot):
     bot.add_cog(randCog(bot))
